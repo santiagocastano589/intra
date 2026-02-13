@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Humana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <header>
+        <div class="container-logo">
+            <a href="http://172.30.0.3:83/Intra/">
+                <img src="img/LogoClinica.png" alt="Logo Clínica Central">
+            </a>
+        </div>
+
+        <!-- MENÚ DE LA PÁGINA -->
+        <div class="container-menu">
+            <nav id="menu">
+                <ul class="desplegable">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li><a href="#">Medicamentos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.5/ams/">AMS</a></li>
+                            <li><a href="http://172.30.0.10:8080/cgi-bin/">NAS</a></li>
+                            <li><a href="http://172.30.0.11:8080/cgi-bin/">NAS 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aplicativos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.3:83/apps/camas/index.html">Camas</a></li>
+                            <li><a href="http://172.30.0.3:83/CCQC/">Tablero Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Procedimientos</a>
+                        <ul>
+                            <li><a href="#">Imagenología</a></li>
+                            <li><a href="#">Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Áreas</a>
+                        <ul>
+                            <li><a href="#">Facturación</a></li>
+                            <li><a href="#">Calidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SECCIÓN VIDEOS GESTION HUMANA -->
+        <div class="videosKactus">
+            <div class="video">
+                <h3> ¿Cómo Hacer una Solicitud de Permiso? </h3>
+                <video class="embed-responsive-item" controls>
+                <source src="vids/recursoshumanos/solicitud_permisos.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+            </div>
+
+            <div class="video">
+                <h3> ¿Cómo Hacer una Solicitud de Vacaciones? </h3>
+                <video class="embed-responsive-item" controls>
+                <source src="vids/recursoshumanos/solicitud_vacaciones.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+            </div>
+
+        </div>
+
+
+        <!-- SECCIÓN KACTUS GESTION HUMANA -->
+        <div class="container-apps">
+
+            <div class="videos-hosvital">
+                <div class="container-img">
+                    <img src="img/areas/kactus.png" alt="Hosvital Logo">
+                </div>
+                <p>
+                   Ingresa a la plataforma Kactus de Gestión Humana para gestionar tus trámites administrativos, realizar solicitudes como vacaciones, permisos o certificaciones, y consultar de manera rápida y segura tu información laboral, contratos y novedades registradas en el sistema.
+                </p>
+                <div class="whatsapp-icon">
+                    <img src="img/areas/whatsapp32px.png" alt="WhatsApp">
+                    <span>Área Gestión Humana:  <b> 304 332 4574</b></span>
+                </div>
+                <a href="http://172.30.0.6:8081/">
+                    Ir a Kactus
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <a href="https://wa.me/3176350094" target="_blank" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+    </main>
+
+
+</body>
+</html>

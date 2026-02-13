@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Clínica Central</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <header>
+        <div class="container-logo">
+            <a href="http://172.30.0.3:83/Intra/">
+                <img src="img/LogoClinica.png" alt="Logo Clínica Central">
+            </a>
+        </div>
+
+        <!-- MENÚ DE LA PÁGINA -->
+        <div class="container-menu">
+            <nav id="menu">
+                <ul class="desplegable">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li><a href="index.html">Medicamentos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.5/ams/">AMS</a></li>
+                            <li><a href="http://172.30.0.10:8080/cgi-bin/">NAS</a></li>
+                            <li><a href="http://172.30.0.11:8080/cgi-bin/">NAS 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Aplicativos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.3:83/apps/camas/index.html">Camas</a></li>
+                            <li><a href="http://172.30.0.3:83/CCQC/">Tablero Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Procedimientos</a>
+                        <ul>
+                            <li><a href="#">Imagenología</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Áreas</a>
+                        <ul>
+                            <li><a href="gestionHumana.html">Gestión Humana</a></li>
+                            <li><a href="#">Facturación</a></li>
+                            <li><a href="#">Calidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+
+        <!-- CARDS DE ENLACE -->
+        <div class="container-cards mid">
+
+            <!-- GESTIÓN HUMANA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container lab">
+                        <img src="./img/areas/christus.png" alt="Laboratorio Christus logo">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Laboratorio Christus</h3>
+                    <p>
+                        Accede a la plataforma de Gestión Humana para realizar tus solicitudes y consultar tu información laboral.
+                    </p>
+                    <a href="https://www.christussinergia.com/portalcliente/#/login" class="btn">Ir a la Página</a>
+                </div>
+            </div>
+
+            <!-- LABORATORIOS -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container lab">
+                        <img src="data:image/png;base64,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" alt="SYNLAB logo">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Laboratorio SYNLAB</h3>
+                    <p>
+                        Consulta resultados, procesos y herramientas relacionadas con el área de laboratorios.
+                    </p>
+                    <a href="#" class="btn">Página Laboratorios</a>
+                </div>
+            </div>
+
+            <!-- IMAGENOLOGÍA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container lab">
+                        <img src="./img/areas/christus.png" alt="Gestión Humana">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Laboratorio Enterprise</h3>
+                    <p>
+                        Acceso a estudios diagnósticos e información del área de imagenología.
+                    </p>
+                    <a href="#" class="btn">Página Imagenología</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <a href="https://wa.me/3176350094" target="_blank" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+    </main>
+
+
+
+</body>
+</html>
