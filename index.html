@@ -18,6 +18,9 @@
         </div>
 
         <!-- MENÚ DE LA PÁGINA -->
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        
         <div class="container-menu">
             <nav id="menu">
                 <ul class="desplegable">
@@ -47,10 +50,27 @@
                             <li><a href="#">Calidad</a></li>
                         </ul>
                     </li>
+                    <li><a href="">Enlaces Administrativos</a>
+                        <ul>
+                            <li><a href="gestionHumana.html">Gestión Humana</a></li>
+                            <li><a href="#">Facturación</a></li>
+                            <li><a href="#">Calidad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Secciones</a>
+                        <ul>
+                            <li><a href="gestionHumana.html">Gestión Humana</a></li>
+                            <li><a href="#">Facturación</a></li>
+                            <li><a href="#">Calidad</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+
+    
 
     <main>
 
@@ -275,6 +295,16 @@
             document.getElementById(`slide${currentSlide}`).checked = true;
         }, 4000);
     </script>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const containerMenu = document.querySelector('.container-menu');
+
+        menuToggle.addEventListener('click', () => {
+            containerMenu.classList.toggle('active');
+        });
+    </script>
+
 
 </body>
 </html>

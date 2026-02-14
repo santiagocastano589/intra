@@ -700,25 +700,33 @@ h2{
 }
 
 
+/* ESTILOS PARA EL MENU HAMBURGUEZA */
 
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+/* SUBMENÚS */
+.desplegable ul {
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
+.desplegable li:hover > ul {
+    display: block;
+}
 
 
 
 /* ===============================
    RESPONSIVE
 ================================ */
+
+
+
 
 @media (max-width: 768px) {
     .slider-wrapper {
@@ -729,8 +737,40 @@ h2{
         font-size: 14px;
         padding: 8px 12px;
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .container-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+    }
+
+    .container-menu.active {
+        display: block;
+    }
+
+    .desplegable {
+        flex-direction: column;
+    }
+
+    .desplegable li {
+        width: 100%;
+    }
+
+    .desplegable li a {
+        display: block;
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .desplegable li ul {
+        position: static;
+    }
 }
 
-@media (min-width: 320px) { 
-    
-}
