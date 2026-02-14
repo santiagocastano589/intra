@@ -727,7 +727,6 @@ h2{
 
 
 
-
 @media (max-width: 768px) {
     .slider-wrapper {
         height: 260px;
@@ -774,3 +773,100 @@ h2{
     }
 }
 
+
+
+@media (max-width: 480px) {
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-logo img {
+        height: 50px;
+
+    }
+
+    .slider{
+        padding: 0 10px;
+    }
+
+    .slider-wrapper {
+        height: 10.2rem;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 5px;
+    }
+
+    .wrapper{
+        height: 160px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .ecosystem{
+        width: 95%;
+        height: 300px;
+    }
+
+    .panel{
+        height: 250px;
+    }
+
+    .panel-info img{
+        width: 95%;
+    }
+
+    .panel-info p{
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .panel-info a{
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .container-apps{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-apps > div{
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .container-apps > div > p{
+        font-size: 11px;
+    }
+
+    .videos-hosvital img{
+        width: 200px;
+    }
+
+    .glpi img{
+        width: 150px;
+    }
+    .videos-hosvital h4{
+        font-size: 15px;
+    }
+
+    .container-apps a{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .whatsapp-icon span{
+        font-size: 11px;
+    }
+
+    .whatsapp-icon img{
+        width: 15px;
+    }
+
+    
+}
