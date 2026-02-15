@@ -737,6 +737,41 @@ h2{
         padding: 8px 12px;
     }
 
+        #menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .has-submenu > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .has-submenu > a::after {
+        content: "▾";
+        font-size: 14px;
+        transition: transform 0.3s ease;
+    }
+
+    .has-submenu.active > a::after {
+        transform: rotate(180deg);
+    }
+
+    .has-submenu ul {
+        display: none;
+        background: #f8fafc;
+    }
+
+    .has-submenu.active ul {
+        display: block;
+    }
+
+    .has-submenu ul li a {
+        padding-left: 30px;
+        font-size: 13px;
+    }
+ 
     .menu-toggle {
         display: block;
     }
@@ -770,7 +805,7 @@ h2{
 
     .desplegable li ul {
         position: static;
-    }
+    } 
 }
 
 
@@ -795,11 +830,15 @@ h2{
         height: 10.2rem;
         background-color: transparent;
         box-shadow: none;
-        border-radius: 5px;
+        border-radius: 0px;
     }
 
     .wrapper{
         height: 160px;
+    }
+
+    .btn{
+        font-size: 13px;
     }
 
     h2{
@@ -825,7 +864,7 @@ h2{
     }
 
     .panel-info a{
-        width: 50%;
+        width: 40%;
         font-size: 12px;
     }
 
@@ -866,6 +905,16 @@ h2{
 
     .whatsapp-icon img{
         width: 15px;
+    }
+
+    .videosKactus{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video{
+        width: 100%;
+        margin: 5px;
     }
 
     

@@ -18,6 +18,8 @@
         </div>
 
         <!-- MENÚ DE LA PÁGINA -->
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
         <div class="container-menu">
             <nav id="menu">
                 <ul class="desplegable">
@@ -39,14 +41,14 @@
                     </li>
                     <li><a href="#">Procedimientos</a>
                         <ul>
-                            <li><a href="#">Imagenología</a></li>
+                            <li><a href="imagenologia.html">Imagenología</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Áreas</a>
                         <ul>
                             <li><a href="gestionHumana.html">Gestión Humana</a></li>
                             <li><a href="#">Facturación</a></li>
-                            <li><a href="#">Calidad</a></li>
+                            <li><a href="calidad.html">Calidad</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -121,6 +123,14 @@
     </main>
 
 
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const containerMenu = document.querySelector('.container-menu');
+
+        menuToggle.addEventListener('click', () => {
+            containerMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

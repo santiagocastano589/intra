@@ -20,11 +20,12 @@
         <!-- MENÚ DE LA PÁGINA -->
 
         <button class="menu-toggle" id="menuToggle">☰</button>
-        
+
         <div class="container-menu">
             <nav id="menu">
                 <ul class="desplegable">
-                    <li><a href="">Medicamentos</a>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">Medicamentos</a>
                         <ul>
                             <li><a href="http://172.30.0.5/ams/" target="_blank">AMS</a></li>
                             <li><a href="http://172.30.0.10:8080/cgi-bin/" target="_blank">NAS</a></li>
@@ -39,7 +40,7 @@
                     </li>
                     <li><a href="">Procedimientos</a>
                         <ul>
-                            <li><a href="">Imagenología</a></li>
+                            <li><a href="imagenologia.html">Imagenología</a></li>
                             <li><a href="laboratorios.html">Laboratorios</a></li>
                         </ul>
                     </li>
@@ -47,7 +48,7 @@
                         <ul>
                             <li><a href="gestionHumana.html">Gestión Humana</a></li>
                             <li><a href="#">Facturación</a></li>
-                            <li><a href="#">Calidad</a></li>
+                            <li><a href="calidad.html">Calidad</a></li>
                         </ul>
                     </li>
                     <li><a href="">Enlaces Administrativos</a>
@@ -162,7 +163,7 @@
                     <p>
                         Acceso a estudios diagnósticos e información del área de imagenología.
                     </p>
-                    <a href="#" class="btn">Página Imagenología</a>
+                    <a href="imagenologia.html" class="btn">Página Imagenología</a>
                 </div>
             </div>
 
@@ -178,7 +179,7 @@
                     <p>
                         Documentación y herramientas para la mejora continua y procesos de calidad.
                     </p>
-                    <a href="#" class="btn">Página Calidad</a>
+                    <a href="calidad.html" class="btn">Página Calidad</a>
                 </div>
             </div>
 
@@ -297,13 +298,22 @@
     </script>
 
     <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const containerMenu = document.querySelector('.container-menu');
+        const menuToggle = document.getElementById("menuToggle");
+        const menuContainer = document.querySelector(".container-menu");
 
-        menuToggle.addEventListener('click', () => {
-            containerMenu.classList.toggle('active');
+        menuToggle.addEventListener("click", () => {
+            menuContainer.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".submenu-toggle").forEach(item => {
+            item.addEventListener("click", e => {
+                e.preventDefault();
+                const parent = item.parentElement;
+                parent.classList.toggle("active");
+            });
         });
     </script>
+
 
 
 </body>

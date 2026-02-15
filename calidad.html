@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calidad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <header>
+        <div class="container-logo">
+            <a href="http://172.30.0.3:83/Intra/">
+                <img src="img/LogoClinica.png" alt="Logo Clínica Central">
+            </a>
+        </div>
+
+        <!-- MENÚ DE LA PÁGINA -->
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <div class="container-menu">
+            <nav id="menu">
+                <ul class="desplegable">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li><a href="">Medicamentos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.5/ams/" target="_blank">AMS</a></li>
+                            <li><a href="http://172.30.0.10:8080/cgi-bin/" target="_blank">NAS</a></li>
+                            <li><a href="http://172.30.0.11:8080/cgi-bin/" target="_blank">NAS 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Aplicativos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.3:83/apps/camas/index.html" target="_blank">Camas</a></li>
+                            <li><a href="http://172.30.0.3:83/CCQC/" target="_blank">Tablero Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Procedimientos</a>
+                        <ul>
+                            <li><a href="imagenologia.html">Imagenología</a></li>
+                            <li><a href="laboratorios.html">Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Áreas</a>
+                        <ul>
+                            <li><a href="gestionHumana.html">Gestión Humana</a></li>
+                            <li><a href="#">Facturación</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+
+    <main>
+
+        <!-- CARDS DE ENLACE -->
+        <div class="container-cards">
+
+            <!-- GESTIÓN HUMANA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/gestionH.png" alt="Gestión Humana">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Manuales Almera</h3>
+                    <p>
+                        Accede a la plataforma de Gestión Humana para realizar tus solicitudes y consultar tu información laboral.
+                    </p>
+                    <a href="gestionHumana.html" class="btn">Página Gestión Humana</a>
+                </div>
+            </div>
+
+            <!-- LABORATORIOS -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/lab.png" alt="Laboratorios">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Almera</h3>
+                    <p>
+                        Consulta resultados, procesos y herramientas relacionadas con el área de laboratorios.
+                    </p>
+                    <a href="laboratorios.html" class="btn">Página Laboratorios</a>
+                </div>
+            </div>
+
+            <!-- IMAGENOLOGÍA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/radio.png" alt="Imagenología">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Guia Medica</h3>
+                    <p>
+                        Acceso a estudios diagnósticos e información del área de imagenología.
+                    </p>
+                    <a href="#" class="btn">Página Imagenología</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <a href="https://wa.me/3176350094" target="_blank" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+    </main>
+
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const containerMenu = document.querySelector('.container-menu');
+
+        menuToggle.addEventListener('click', () => {
+            containerMenu.classList.toggle('active');
+        });
+    </script>
+
+
+</body>
+</html>
