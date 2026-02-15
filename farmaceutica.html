@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calidad</title>
+    <title>Intranet Clínica Central</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -24,9 +24,6 @@
         <div class="container-menu">
             <nav id="menu">
                 <ul class="desplegable">
-                    <li class="has-submenu">
-                        <a href="index.html" class="submenu-toggle">Inicio</a>
-                    </li>
                     <li class="has-submenu">
                         <a href="#" class="submenu-toggle">Medicamentos</a>
                         <ul>
@@ -55,6 +52,7 @@
                         <ul>
                             <li><a href="gestionHumana.html" target="_blank">Gestión Humana</a></li>
                             <li><a href="facturacion.html" target="_blank">Facturación</a></li>
+                            <li><a href="calidad.html" target="_blank">Calidad</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,6 +65,8 @@
 
     <main>
 
+
+
         <!-- CARDS DE ENLACE -->
         <div class="container-cards">
 
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="lower-container">
-                    <h3>Manuales Almera</h3>
+                    <h3>AMS</h3>
                     <p>
                         Accede a la plataforma de Gestión Humana para realizar tus solicitudes y consultar tu información laboral.
                     </p>
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="lower-container">
-                    <h3>Almera</h3>
+                    <h3>Pagina MIPRESS</h3>
                     <p>
                         Consulta resultados, procesos y herramientas relacionadas con el área de laboratorios.
                     </p>
@@ -110,18 +110,35 @@
                     </div>
                 </div>
                 <div class="lower-container">
-                    <h3>Guia Medica</h3>
+                    <h3>Control farmacia</h3>
                     <p>
                         Acceso a estudios diagnósticos e información del área de imagenología.
                     </p>
-                    <a href="#" class="btn">Página Imagenología</a>
+                    <a href="imagenologia.html" class="btn">Página Imagenología</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="line">
+            <h2>Apps</h2>
+        </div>
+
+        <!-- SECCIÓN ECOSYSTEM -->
+        <div class="container-ecosystem">
+            <div class="ecosystem">
+                <div class="panel">
+                    <div class="panel-info">
+                        <img src="img/ecosystem.png" alt="Ecosystem">
+                        <p>
+                            Go Ecosystem Digital Health, tu aliado integral en soluciones digitales en salud,
+                            de fácil uso, escalables y seguras.
+                        </p>
+                        <a href="https://ecodigital.portubien.co/">Ir a la página</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
 
 
         <a href="https://wa.me/3176350094" target="_blank" class="whatsapp-btn">
@@ -131,14 +148,24 @@
     </main>
 
 
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const containerMenu = document.querySelector('.container-menu');
 
-        menuToggle.addEventListener('click', () => {
-            containerMenu.classList.toggle('active');
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const menuContainer = document.querySelector(".container-menu");
+
+        menuToggle.addEventListener("click", () => {
+            menuContainer.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".submenu-toggle").forEach(item => {
+            item.addEventListener("click", e => {
+                e.preventDefault();
+                const parent = item.parentElement;
+                parent.classList.toggle("active");
+            });
         });
     </script>
+
 
 
 </body>

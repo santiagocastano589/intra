@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturacion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <header>
+        <div class="container-logo">
+            <a href="http://172.30.0.3:83/Intra/">
+                <img src="img/LogoClinica.png" alt="Logo Clínica Central">
+            </a>
+        </div>
+
+        <!-- MENÚ DE LA PÁGINA -->
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <div class="container-menu">
+            <nav id="menu">
+                <ul class="desplegable">
+                    <li class="has-submenu">
+                        <a href="index.html" class="submenu-toggle">Inicio</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">Medicamentos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.5/ams/" target="_blank">AMS</a></li>
+                            <li><a href="http://172.30.0.10:8080/cgi-bin/" target="_blank">NAS</a></li>
+                            <li><a href="http://172.30.0.11:8080/cgi-bin/" target="_blank">NAS 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">Aplicativos</a>
+                        <ul>
+                            <li><a href="http://172.30.0.3:83/apps/camas/index.html" target="_blank">Camas</a></li>
+                            <li><a href="http://172.30.0.3:83/CCQC/" target="_blank">Tablero Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">Procedimientos</a>
+                        <ul>
+                            <li><a href="imagenologia.html" target="_blank">Imagenología</a></li>
+                            <li><a href="radiologia.html" target="_blank">Radiologia</a></li>
+                            <li><a href="laboratorios.html" target="_blank">Laboratorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">Áreas</a>
+                        <ul>
+                            <li><a href="gestionHumana.html" target="_blank">Gestión Humana</a></li>
+                            <li><a href="calidad.html" target="_blank">Calidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    
+
+    <main>
+
+
+        <!-- CARDS DE ENLACE -->
+        <div class="container-cards">
+
+            <!-- GESTIÓN HUMANA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/gestionH.png" alt="Gestión Humana">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Asmet Salud</h3>
+                    <p>
+                        Accede a la plataforma de Gestión Humana para realizar tus solicitudes y consultar tu información laboral.
+                    </p>
+                    <a href="https://oficinavirtual.asmetsalud.com/#/ov/prestadores" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+
+            <!-- LABORATORIOS -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/lab.png" alt="Laboratorios">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Sura</h3>
+                    <p>
+                        Consulta resultados, procesos y herramientas relacionadas con el área de laboratorios.
+                    </p>
+                    <a href="https://login.sura.com/sso/servicelogin.aspx?continueTo=https%3A%2F%2Fsaludweb-proc.suramericana.com%2Fsaludweb%2F&service=salud" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+
+            <!-- IMAGENOLOGÍA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/radio.png" alt="Imagenología">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Salud Total</h3>
+                    <p>
+                        Acceso a estudios diagnósticos e información del área de imagenología.
+                    </p>
+                    <a href="https://transaccional.saludtotal.com.co/OficinaVirtual/#/" class="btn">Página Imagenología</a>
+                </div>
+            </div>
+
+            <!-- CALIDAD -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/calidad.png" alt="Calidad">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Cosmitet</h3>
+                    <p>
+                        Documentación y herramientas para la mejora continua y procesos de calidad.
+                    </p>
+                    <a href="https://estado.cosmitet.net/estado/" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+
+            <!-- FARMACÉUTICA -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/farmaceutica.png" alt="Farmacéutica">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Positiva</h3>
+                    <p>
+                        Información y gestión de medicamentos y procesos farmacéuticos.
+                    </p>
+                    <a href="https://positivacuida.positiva.gov.co/cas/login?service=https%3A%2F%2Fpositivacuida.positiva.gov.co%2Fweb%2Fj_spring_cas_security_check" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+
+            <!-- FACTURACIÓN -->
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Sanitas Back</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="https://sanitasback.portalsif.com/BACK" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Validador Sanitas</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="https://portal.colsanitas.com/sso/login?service=https%3A%2F%2Fappcore.colsanitas.com%2FValidadorDerechos%2Fpages%2Fgestion%2FValidacionDerechos.seam%3Fcid%3D55838" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Famisanar</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="https://enlinea.famisanar.com.co/Portal/home.jspx" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>IFactura</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="https://ifacturagruposalud.transfiriendo.com/IFacturaClinicaExpOspedale/portaladquiriente/pages/auth/portal-ifactura" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>POS Populi</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="https://pospopuli.minsalud.gov.co/PospopuliWeb/paginas/home.aspx#search1" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Glucometria Facturacion</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="#" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="upper-container">
+                    <div class="image-container">
+                        <img src="./img/facturacion.png" alt="Facturación">
+                    </div>
+                </div>
+                <div class="lower-container">
+                    <h3>Oxigeno</h3>
+                    <p>
+                        Consulta y gestión de procesos relacionados con facturación y cuentas médicas.
+                    </p>
+                    <a href="#" class="btn">Ir a la pagina</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <a href="https://wa.me/3176350094" target="_blank" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+    </main>
+
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const menuContainer = document.querySelector(".container-menu");
+
+        menuToggle.addEventListener("click", () => {
+            menuContainer.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".submenu-toggle").forEach(item => {
+            item.addEventListener("click", e => {
+                e.preventDefault();
+                const parent = item.parentElement;
+                parent.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
